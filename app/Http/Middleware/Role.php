@@ -15,7 +15,7 @@ class Role
      */
     public function handle(Request $request, Closure $next, $role): Response
     {
-        if(in_array($request->user()->role)) {
+        if($request->user()->role == $role) {
             return $next($request);
         }
         abort(403, 'Not Found');

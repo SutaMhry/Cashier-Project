@@ -11,5 +11,5 @@ Route::controller(AuthController::class)->group(function () {
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/index', function () {
         return view('index');
-    });
+    })->name('index');
 });

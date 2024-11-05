@@ -52,7 +52,9 @@
                                 </div>
                             </div>
                             <div class="form-login">
-                                <a class="btn btn-login" type="submit">Sign In</a>
+                                <button class="btn btn-login" type="submit">
+                                    Sign In
+                                </button>
                             </div>
                         </form>
                         <div class="signinform text-center">
