@@ -29,7 +29,7 @@ class AuthController extends Controller
                 return redirect()->intended('studentdash');
             }
         }else{
-            return redirect('/')->with('failed', 'Email atau Password Salah');
+            return redirect('/login')->with('failed', 'Email atau Password Salah');
         }
     }
 }
