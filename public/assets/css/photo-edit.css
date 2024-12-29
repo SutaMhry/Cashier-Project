@@ -1,0 +1,51 @@
+.hidden-input {
+    display: none;
+}
+
+#currentImageContainer {
+    padding: 0 0 12.5px 12.5px;
+    margin-bottom: 2.25rem;
+    border: 1px solid rgba(145, 158, 171, 0.32);
+    border-radius: 5px;
+}
+
+.image-preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.image-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#currentImage {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.file-info h2 {
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.image-action label {
+    margin: 0 10px 0 0;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}

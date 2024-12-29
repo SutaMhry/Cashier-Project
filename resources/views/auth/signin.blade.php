@@ -33,9 +33,8 @@
                         </div>
                         <div class="login-userheading">
                             <h3>Sign In</h3>
-                            <h4>Please login to your account</h4>
                         </div>
-                        <form action="{{ route('login') }}" method="POST">
+                        <form action="{{ route('authenticate') }}" method="POST">
                             @csrf
                             <div class="form-login">
                                 <label>Email</label>
@@ -57,9 +56,6 @@
                                 </button>
                             </div>
                         </form>
-                        <div class="signinform text-center">
-                            <h4>Don’t have an account? <a href="signup.html" class="hover-a">Sign Up</a></h4>
-                        </div>
                     </div>
                 </div>
                 <div class="login-img">

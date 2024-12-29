@@ -14,13 +14,14 @@ return new class extends Migration
         Schema::create('menus', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->enum('category', ['makanan', 'minuman']);
+            $table->unsignedBigInteger('category_id');
             $table->decimal('price', 8, 2);
             $table->integer('stock');
-            $table->string('description', 100);
             $table->string('image');
             $table->enum('status', ['tersedia', 'habis']);
             $table->timestamps();
+
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
         });
         
     }
